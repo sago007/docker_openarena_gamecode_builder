@@ -2,7 +2,7 @@ FROM debian:8
 MAINTAINER poul@poulsander.com
 COPY gamecode_build_script.bash /
 RUN apt-get update && \
-    apt-get install -y build-essential zip git && \
+    apt-get install -y build-essential bison zip git && \
     mkdir /data && \
     mkdir /working && \
     chmod 777 /working && \
