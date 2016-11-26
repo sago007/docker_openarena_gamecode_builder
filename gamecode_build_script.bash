@@ -30,11 +30,15 @@ cd /working/gamecode
 make
 cd build/release-linux-x86_64/oax
 zip -r /working/$PKDIR/oax.pk3 vm 
+cd /extra2pk3
+zip -r /working/$PKDIR/oax.pk3 *
 cd /working
 zip -r "$ZIPFILE" "$PKDIR"
 
 cd /working/gamecode/build/release-linux-x86_64/missionpack
 zip -r /working/$MISSIONPACKDIR/oax_m1.pk3 vm
+cd /extra2pk3
+zip -r /working/$MISSIONPACKDIR/oax_m1.pk3 *
 cd /working/UI3
 zip -r /working/$MISSIONPACKDIR/oax_m0.pk3 *
 cd /working
