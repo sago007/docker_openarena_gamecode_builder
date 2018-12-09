@@ -13,7 +13,7 @@ MISSIONPACKDIR=oax_m
 mkdir -p "/working/$PKDIR"
 mkdir -p "/working/$MISSIONPACKDIR"
 cd /working/UI3
-VERSION_ID_M="${VERSION_ID}$(git log -1 --date=short --format="_%cd_%h")"
+VERSION_ID_M="${VERSION_ID}$(git log -1 --date=short --format="_UI3_%cd_%h")"
 
 ZIPFILE="/data/${VERSION_ID}.zip"
 ZIPFILE_M="/data/${VERSION_ID_M}_m.zip"

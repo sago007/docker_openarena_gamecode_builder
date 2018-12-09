@@ -1,9 +1,9 @@
 FROM debian:8
 MAINTAINER poul@poulsander.com
-COPY gamecode_build_script.bash /
 RUN apt-get update && \
-    apt-get install -y build-essential bison zip git && \
-    mkdir /data && \
+    apt-get install -y build-essential bison zip git
+COPY gamecode_build_script.bash /
+RUN mkdir /data && \
     mkdir /working && \
     mkdir /extra2pk3 && \
     chmod 777 /working && \
